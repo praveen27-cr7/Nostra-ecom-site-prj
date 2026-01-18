@@ -1,0 +1,10 @@
+.brand-items{
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    gap: 10px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;   
+}

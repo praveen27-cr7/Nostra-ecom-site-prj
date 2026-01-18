@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<!-- Offer popup -->
+
+   <div id="popup" class="flex justify-center gap-30 bg-slate-800 p-1 text-white text-xs md:text-xl">
+    <h2>Sign Up and <span class="font-bold">GET 20% OFF</span> for your first Order</h2>
+    <button id="close-popup" class="font-bold cursor-pointer">X</button>
+   </div>
+
+   <!-- NAV BAR -->
+    <section class="flex justify-between items-center p-4 sticky top-0 z-30 bg-white">
+        <div class="font-bold text-slate-800 text-3xl md:text-2xl">
+            Nostra
+        </div>
+
+        <div>
+            <ul class="md:flex gap-8 text-slate-600 hidden">
+                <li><a class="hover:underline" href="">Home</a></li>
+                <li><a class="hover:underline" href="#about">New Arrival</a></li>
+                <li><a class="hover:underline" href="">Most Wanted</a></li>
+                <li><a class="hover:underline" href="">Collections</a></li>
+                <li><a class="hover:underline" href="">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="md:hidden">
+            <button id="menuBtn">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+               <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                  </svg> 
+            </button>
+        </div>
+    </section>
+
+    <!-- SIDE NAV -->
+     <section id="sidenav" class="fixed z-40 top-0 -left-120 bg-slate-800 md:hidden transition-all duration-1000 ease-in-out" style="width: 50%; height: 100%;">
+        <p id="close-sidenav" class="text-right text-white font-bold p-6">X</p>
+        <ul class="flex flex-col gap-8 text-white h-screen p-6 text-xl" >
+            <li><a class="hover:underline" href="">Home</a></li>
+            <li><a class="hover:underline" href="">New Arrival</a></li>
+            <li><a class="hover:underline" href="">Most Wanted</a></li>
+            <li><a class="hover:underline" href="">Collections</a></li>
+            <li><a class="hover:underline" href="">Contact Us</a></li>
+        </ul>
+     </section>
+
+     <!-- IMAGE SLIDER -->
+      <section class="m-2 overflow-hidden relative rounded-2xl">
+
+         <!-- Overlay Text -->
+       <div class="absolute z-20 text-white" style="top: 30%; text-align: center; width: 100%;">
+        <div class="text-center">
+            <h1 class="font-bold" style="font-size: 4vw;">Level up your style with our</h1>
+            <p class="mt-1 font-semibold text-sm md:text-xl">Summer vacations</p>
+            <button class="bg-white text-black py-0 px-2 md:py-1 mt-2">Shop Now →
+              </button>
+        </div>
+    </div> 
+
+        <!-- Images -->
+        <div id="slider-image-container" class="flex flex-row transition-all duration-1000" style="width: 300%;">
+            <img src="img/slider-one.jpg" alt="" style="width: 100vw; flex-shrink: 0;">
+            <img src="img/slider-two.jpg" alt="" style="width: 100vw; flex-shrink: 0;">
+            <img src="img/slider-three.jpg" alt="" style="width: 100vw; flex-shrink: 0;">
+        </div>
+     
+      </section>
+
+      <!-- BRANDS -->
+       <section class="p-4 mt-10">
+        <h1 class="font-bold text-slate-800 text-3xl md:text-2xl">Brands</h1>
+          <div class="grid md:grid-cols-7 grid-cols-4 gap-3 mt-5 text-xl p-3">
+            <div class="brand-items">
+                <img src="icons/adidas.png" alt="" class="w-12">
+                <p>Adidas</p>
+            </div>
+            <div class="brand-items">
+                <img src="icons/behance.png" alt="" class="w-12">
+                <p>Behance</p>
+            </div>
+            <div class="brand-items">
+                <img src="icons/leaves.png" alt="" class="w-12">
+                <p>Leaves</p>
+            </div>
+            <div class="brand-items">
+                <img src="icons/nike.png" alt="" class="w-12">
+                <p>Nike</p>
+            </div>
+            <div class="brand-items">
+                <img src="icons/puma.png" alt="" class="w-12">
+                <p>Puma</p>
+            </div>
+            <div class="brand-items">
+                <img src="icons/simple.png" alt="" class="w-12">
+                <p>Simple</p>
+            </div>
+            <div class="brand-items">
+                <img src="icons/twitch.png" alt="" class="w-12">
+                <p>Twitch</p>
+            </div>
+          </div>
+       </section>
+
+       <!-- About Us -->
+
+       <section id="about" class="p-4 mt-10">
+        <div class="flex justify-between items-center gap-5" >
+            <div class="font-bold text-slate-800 text-3xl md:text-3xl">
+                <h1>We Provide Best Customer Experiences</h1>
+            </div>
+            <div class="text-lg  text-slate-800 hidden md:inline">
+               <p>|| We ensure that our customers have the best shopping experience</p> 
+            </div>
+        </div>
+
+        <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-4 mt-5 text-slate-800 ">
+            <div class="bg-slate-100 p-3">
+                <i style="font-size: 3vw;margin-bottom: 10px;" class="fa-regular fa-circle-check"></i>
+                <h2 class="font-bold">Original Products</h2>
+                <p>Lorem ipsum dolor sit  consectetur amet adipisicing elit. Quae hic </p>
+            </div>
+            <div class="bg-slate-100 p-3">
+                <i style="font-size: 3vw;margin-bottom: 10px;" class="fa-regular fa-face-smile"></i>
+                <h2 class="font-bold">Satisfaction Guarantee</h2>
+                <p>Lorem ipsum dolor sit  consectetur amet adipisicing elit. Quae hic </p>
+            </div>
+            <div class="bg-slate-100 p-3">
+                <i style="font-size: 3vw;margin-bottom: 10px;" class="fa-solid fa-broom"></i>
+                <h2 class="font-bold">New Arrival Everyday</h2>
+                <p>Lorem ipsum dolor sit consectetur amet adipisicing elit. Quae hic </p>
+            </div>
+            <div class="bg-slate-100 p-3">
+                <i style="font-size: 3vw;margin-bottom: 10px;" class="fa-solid fa-truck-fast"></i>
+                <h2 class="font-bold">Fast & Free Shipping</h2>
+                <p>Lorem ipsum dolor sit consectetur amet  adipisicing elit. Quae hic</p>
+            </div>
+        </div>
+       </section>
+
+    
+    <script src="index.js"></script>
+</body>
+</html>
