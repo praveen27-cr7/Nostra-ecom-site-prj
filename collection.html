@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Offer popup -->
+
+   <div id="popup" class="flex justify-center gap-30 bg-slate-800 p-1 text-white text-xs md:text-xl">
+    <h2>Sign Up and <span class="font-bold">GET 20% OFF</span> for your first Order</h2>
+    <button id="close-popup" class="font-bold cursor-pointer">X</button>
+   </div>
+
+   <!-- NAV BAR -->
+    <section class="flex justify-between items-center p-4 sticky top-0 z-30 bg-white">
+        <div class="font-bold text-slate-800 text-3xl md:text-2xl">
+            Nostra
+        </div>
+
+        <div>
+            <ul class="md:flex gap-8 text-slate-600 hidden">
+                <li><a class="hover:underline" href="index.html">Home</a></li>
+                <li><a class="hover:underline" href="#new-arrivals">New Arrival</a></li>
+                <li><a class="hover:underline" href="#most-wanted">Most Wanted</a></li>
+                <li><a class="hover:underline" href="">Collections</a></li>
+                <li><a class="hover:underline" href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="md:hidden">
+            <button id="menuBtn">
+                <svg xmlns="https://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+               <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                  </svg> 
+            </button>
+        </div>
+    </section>
+
+    <!-- SIDE NAV -->
+     <section id="sidenav" class="fixed z-40 top-0 -left-120 bg-slate-800 md:hidden transition-all duration-1000 ease-in-out" style="width: 50%; height: 100%;">
+        <p id="close-sidenav" class="text-right text-white font-bold p-6">X</p>
+        <ul class="flex flex-col gap-8 text-white h-screen p-6 text-xl" >
+            <li><a class="hover:underline" href="index.html">Home</a></li>
+            <li><a class="hover:underline" href="#new-arrivals">New Arrival</a></li>
+            <li><a class="hover:underline" href="#most-wanted">Most Wanted</a></li>
+            <li><a class="hover:underline" href="collection.html">Collections</a></li>
+            <li><a class="hover:underline" href="contact.html">Contact Us</a></li>
+        </ul>
+     </section>
+    
+     
+
+
+<!-- Footer -->
+      <section class="mt-10">
+        <footer class="bg-slate-800 p-5 text-white">
+            <h1 class="font-bold md:text-3xl text-2xl">Nostra</h1>
+            <p class="mt-2 md:text-xl">The Standard chunk of Lorem ipsum used since the 1500s is reprodused below for those interest</p>
+            <div class="mt-3 flex gap-8">
+                <i class="icon fa-brands fa-instagram" style="color: #ffffff;"></i>
+                <i class="icon fa-brands fa-twitter" style="color: #ffffff;"></i>
+                <i class="icon fa-brands fa-facebook" style="color: #ffffff;"></i>
+            </div>
+            <p class="mt-4 md:text-xl">@ 2026 Nostra.com</p>
+        </footer>
+    </section>
+
+     <script src="index.js">
+
+     </script>
+</body>
+</html>
