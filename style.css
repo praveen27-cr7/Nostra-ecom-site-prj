@@ -12,3 +12,29 @@ body {
 .no-scrollbar::-webkit-scrollbar{
     appearance: none;
 }
+
+.products>div img{
+    width:20vw;
+    margin: 10px;
+}
+
+.collections-text div{
+    font-size: 2vw;
+}
+
+.products>div:hover{
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.products>div h2{
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+
+.products>div p{
+    font-size: 1em;
+    color: gray;
+}
+

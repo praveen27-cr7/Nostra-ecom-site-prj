@@ -1,0 +1,25 @@
+{
+  "name": "nostra-ecom-site-prj",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/praveen27-cr7/Nostra-ecom-site-prj.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/praveen27-cr7/Nostra-ecom-site-prj/issues"
+  },
+  "homepage": "https://github.com/praveen27-cr7/Nostra-ecom-site-prj#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.18",
+    "tailwindcss": "^4.1.18"
+  }
+}

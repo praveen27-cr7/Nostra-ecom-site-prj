@@ -57,39 +57,92 @@
         </ul>
      </section>
     
-     <div>
+     <section>
         <div class="flex justify-between gap-2">
-            <div class="mt-10 ml-5 text-slate-800 relative basis-1/4">
-                <h2 class="text-xl font-bold">Occasion</h2>
-               <div class="text-lg mt-4 mb-6">
-                <input type="checkbox" name="" value="summer">  Summer <br>
-                <input type="checkbox" name="" id="party">  Party <br>
-                <input type="checkbox" name="" id="beach">  Beach
+            <div class="mt-10 ml-5  text-slate-800 relative basis-1/4 collections-text">
+               
+                <h2 class="font-bold mt-5" style="font-size: 2.5vw;">Occasion</h2>
+               <div class=" mt-4 mb-6">
+                <input type="checkbox" name="check" value="summer">  Summer <br>
+                <input type="checkbox" name="check" id="party">  Party <br>
+                <input type="checkbox" name="check" id="beach">  Beach
                </div>
 
-               <h2 class="text-xl font-bold">Colors</h2>
+               <h2 class="font-bold" style="font-size: 2.5vw;">Colors</h2>
 
-               <div class="text-lg mt-4 mb-6">
-                   <input type="checkbox" name="" value="red">  Red <br>
-                   <input type="checkbox" name="" value="blue">  Blue <br>
-                   <input type="checkbox" name="" value="White">  White <br>
-                   <input type="checkbox" name="" value="Green">  Green 
+               <div class=" mt-4 mb-6">
+                   <input type="checkbox" name="check" value="red">  Red <br>
+                   <input type="checkbox" name="check" value="blue">  Blue <br>
+                   <input type="checkbox" name="check" value="White">  White <br>
+                   <input type="checkbox" name="check" value="Green">  Green 
                </div>
 
-               <h2 class="text-xl font-bold">Arrivals</h2>
-               <div class="text-lg mt-4 mb-5">
-                <input type="checkbox" name="" value="new">  New <br>
-                <input type="checkbox" name="" value="old">  Old
+               <h2 class="font-bold" style="font-size: 2.5vw;">Arrivals</h2>
+               <div class=" mt-4 mb-5">
+                <input type="checkbox" name="check" value="new">  New <br>
+                <input type="checkbox" name="check" value="old">  Old
                </div>
 
-               <hr class="absolute top-0 border-l-2 border-slate-800" style="height: 100%; left: 24vw;">
+               <hr class="absolute top-0 border-l-4 ml-4 border-slate-800" style="height: 100%; left: 20vw;">
             </div>
 
-            <div class="basis-3/4">
-               <input type="search" class="border border-slate-600 p-2 outline-0 rounded-2xl" style="width: 90%;" placeholder="Search">
+            <div class="basis-3/4 ml-5 mt-10 ">
+               <input type="search" class="border border-slate-600 p-2 outline-0 rounded-2xl" style="width: 90%;" placeholder="Search" id="search">
+            
+       
+               
+        <!-- Products Grid -->
+         <div class="products grid grid-cols-3 mt-10 items-center gap-8" id="products-grid">
+            <div>
+                <img src="img/products/f1.jpg" alt="">
+                <h2>Floral Summer Shirt</h2>
+                <p>₹220</p>
             </div>
+            <div>
+                <img src="img/products/f2.jpg" alt="">
+                <h2>Summer Green Shirt</h2>
+                <p>₹250</p>
+            </div>
+            <div>
+                <img src="img/products/f3.jpg" alt="">
+                <h2>Party Floral Shirt</h2>
+                <p>₹300</p>
+            </div>
+            <div>
+                <img src="img/products/f4.jpg" alt="">
+                <h2>Beach Summer Shirt  </h2>
+                <p>₹280</p>
+            </div>
+            <div>
+                <img src="img/products/f5.jpg" alt="">
+                <h2>Floral Summer Shirt</h2>
+                <p>₹220</p>
+            </div>
+            <div>
+                <img src="img/products/f6.jpg" alt="">
+                <h2>Summer Green Shirt</h2>
+                <p>₹250</p>
+            </div>
+            <div>
+                <img src="img/products/f7.jpg" alt="">
+                <h2>Beach Summer Trouser</h2>
+                <p>₹300</p>
+            </div>
+            <div>
+                <img src="img/products/f8.jpg" alt="">
+                <h2>Beach Summer Top </h2>
+                <p>₹280</p>
+            </div>
+            <div>
+                <img src="img/products/n1.jpg" alt="">
+                <h2>New Arrival Shirt</h2>
+                <p>₹350</p>
+            </div>
+         </div>
         </div>
-     </div>
+        </div>
+
+     </section>
 
 
 <!-- Footer -->
@@ -109,5 +162,6 @@
      <script src="index.js">
 
      </script>
+     <script src="collection.js"></script>
 </body>
 </html>
