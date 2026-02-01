@@ -29,9 +29,9 @@
         <div>
             <ul class="md:flex gap-8 text-slate-600 hidden">
                 <li><a class="hover:underline" href="index.html">Home</a></li>
-                <li><a class="hover:underline" href="#new-arrivals">New Arrival</a></li>
-                <li><a class="hover:underline" href="#most-wanted">Most Wanted</a></li>
-                <li><a class="hover:underline" href="">Collections</a></li>
+                <li><a class="hover:underline" href="index.html#new-arrivals">New Arrival</a></li>
+                <li><a class="hover:underline" href="index.html#most-wanted">Most Wanted</a></li>
+                <li><a class="hover:underline" href="collection.html">Collections</a></li>
                 <li><a class="hover:underline" href="contact.html">Contact Us</a></li>
             </ul>
         </div>
@@ -50,8 +50,8 @@
         <p id="close-sidenav" class="text-right text-white font-bold p-6">X</p>
         <ul class="flex flex-col gap-8 text-white h-screen p-6 text-xl" >
             <li><a class="hover:underline" href="index.html">Home</a></li>
-            <li><a class="hover:underline" href="#new-arrivals">New Arrival</a></li>
-            <li><a class="hover:underline" href="#most-wanted">Most Wanted</a></li>
+            <li><a class="hover:underline" href="index.html#new-arrivals">New Arrival</a></li>
+            <li><a class="hover:underline" href="index.html#most-wanted">Most Wanted</a></li>
             <li><a class="hover:underline" href="collection.html">Collections</a></li>
             <li><a class="hover:underline" href="contact.html">Contact Us</a></li>
         </ul>
@@ -63,24 +63,24 @@
                
                 <h2 class="font-bold mt-5" style="font-size: 2.5vw;">Occasion</h2>
                <div class=" mt-4 mb-6">
-                <input type="checkbox" name="check" value="summer">  Summer <br>
-                <input type="checkbox" name="check" id="party">  Party <br>
-                <input type="checkbox" name="check" id="beach">  Beach
+<label><input type="checkbox" class="filter" value="summer"> Summer</label><br>
+                <label><input type="checkbox" class="filter" value="party">  Party</label><br>
+                <label><input type="checkbox" class="filter" value="beach">  Beach</label>
                </div>
 
                <h2 class="font-bold" style="font-size: 2.5vw;">Colors</h2>
 
                <div class=" mt-4 mb-6">
-                   <input type="checkbox" name="check" value="red">  Red <br>
-                   <input type="checkbox" name="check" value="blue">  Blue <br>
-                   <input type="checkbox" name="check" value="White">  White <br>
-                   <input type="checkbox" name="check" value="Green">  Green 
+                   <label><input type="checkbox" class="filter" value="red">  Red</label> <br>
+                   <label><input type="checkbox" class="filter" value="blue">  Blue</label> <br>
+                   <label><input type="checkbox" class="filter" value="white">  White</label> <br>
+                   <label><input type="checkbox" class="filter" value="green">  Green</label> 
                </div>
 
                <h2 class="font-bold" style="font-size: 2.5vw;">Arrivals</h2>
                <div class=" mt-4 mb-5">
-                <input type="checkbox" name="check" value="new">  New <br>
-                <input type="checkbox" name="check" value="old">  Old
+                <label><input type="checkbox" class="filter" value="new">  New</label>   <br>
+                <label><input type="checkbox" class="filter" value="old">  Old</label>
                </div>
 
                <hr class="absolute top-0 border-l-4 ml-4 border-slate-800" style="height: 100%; left: 20vw;">
@@ -92,48 +92,50 @@
        
                
         <!-- Products Grid -->
+         <h1 id="no-items-message" class="text-3xl font-medium text-slate-800 text-center hidden">No items found</h1> 
          <div class="products grid grid-cols-3 mt-10 items-center gap-8" id="products-grid">
-            <div>
+
+            <div data-category="summer red" class="shirt">
                 <img src="img/products/f1.jpg" alt="">
                 <h2>Floral Summer Shirt</h2>
                 <p>₹220</p>
             </div>
-            <div>
+            <div data-category="summer green" class="shirt">
                 <img src="img/products/f2.jpg" alt="">
                 <h2>Summer Green Shirt</h2>
                 <p>₹250</p>
             </div>
-            <div>
+            <div data-category="party new" class="shirt">
                 <img src="img/products/f3.jpg" alt="">
                 <h2>Party Floral Shirt</h2>
                 <p>₹300</p>
             </div>
-            <div>
+            <div data-category="beach white" class="shirt">
                 <img src="img/products/f4.jpg" alt="">
                 <h2>Beach Summer Shirt  </h2>
                 <p>₹280</p>
             </div>
-            <div>
+            <div data-category="summer blue" class="shirt    ">
                 <img src="img/products/f5.jpg" alt="">
                 <h2>Floral Summer Shirt</h2>
                 <p>₹220</p>
             </div>
-            <div>
+            <div data-category="party red blue" class="shirt">
                 <img src="img/products/f6.jpg" alt="">
-                <h2>Summer Green Shirt</h2>
+                <h2>Party Over Coat</h2>
                 <p>₹250</p>
             </div>
-            <div>
+            <div data-category="beach old" class="shirt">
                 <img src="img/products/f7.jpg" alt="">
                 <h2>Beach Summer Trouser</h2>
                 <p>₹300</p>
             </div>
-            <div>
+            <div data-category="beach old" class="shirt">
                 <img src="img/products/f8.jpg" alt="">
                 <h2>Beach Summer Top </h2>
                 <p>₹280</p>
             </div>
-            <div>
+            <div data-category="new blue" class="shirt">
                 <img src="img/products/n1.jpg" alt="">
                 <h2>New Arrival Shirt</h2>
                 <p>₹350</p>

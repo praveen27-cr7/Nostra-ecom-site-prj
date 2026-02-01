@@ -4,6 +4,9 @@
     place-items: center;
     gap: 10px;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: 'Poppins', sans-serif;   
